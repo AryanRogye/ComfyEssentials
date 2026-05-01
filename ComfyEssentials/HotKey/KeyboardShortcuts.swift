@@ -17,17 +17,8 @@ extension KeyboardShortcuts.Name {
         "CropOCR",
         default: .init(.u, modifiers: [.command, .shift])
     )
-}
-class HotkeyCoordinator {
-    init(
-        onWhiteSpaceNormalization: @escaping () -> Void = {},
-        onCropOCR: @escaping () -> Void = {}
-    ) {
-        KeyboardShortcuts.onKeyDown(for: .WhitespaceNormalization, action: {
-            onWhiteSpaceNormalization()
-        })
-        KeyboardShortcuts.onKeyDown(for: .CropOCR, action: {
-            onCropOCR()
-        })
-    }
+    static let RecentXcodeProjects = Self(
+        "RecentXcodeProjects",
+        default: .init(.x, modifiers: [.command, .shift])
+    )
 }

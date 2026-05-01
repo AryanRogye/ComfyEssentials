@@ -1,20 +1,25 @@
 //
 //  OCRResultView.swift
-//  ComfyEssentials
+//  ComfyEssentialsUI
 //
-//  Created by Aryan Rogye on 4/30/26.
+//  Created by Aryan Rogye on 5/1/26.
 //
 
 
 import SwiftUI
 
-struct OCRResultView: View {
+public struct OCRResultView: View {
     let image: CGImage
     let text: String
     
+    public init(image: CGImage, text: String) {
+        self.image = image
+        self.text = text
+    }
+    
     @State private var isTextExpanded = true
     
-    var body: some View {
+    public var body: some View {
         HSplitView {
             // Image Panel
             ImagePanel(image: image)

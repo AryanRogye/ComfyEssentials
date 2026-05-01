@@ -9,10 +9,18 @@ import Foundation
 
 @MainActor
 class AppCoordinator {
+    
+    /// Initialize on start
     var hotkeyCoordinator : HotkeyCoordinator?
-    var cropOCRCoordinator : CropOCRCoordinator
-    var whitespaceNormalizationCoordinator: WhitespaceNormalizationCoordinator
+    
     let windowCoordinator = WindowCoordinator()
+    
+    /// Coordinators
+    var whitespaceNormalizationCoordinator: WhitespaceNormalizationCoordinator
+    var cropOCRCoordinator : CropOCRCoordinator
+    var xcodeRecentCoordinator: XcodeRecentCoordinator
+    
+    /// Windowing
     let windowCore = WindowCore()
     
     init() {
@@ -21,6 +29,9 @@ class AppCoordinator {
             windowCore: windowCore
         )
         self.cropOCRCoordinator = CropOCRCoordinator(
+            windowCoordinator: windowCoordinator
+        )
+        self.xcodeRecentCoordinator = XcodeRecentCoordinator(
             windowCoordinator: windowCoordinator
         )
     }
@@ -32,6 +43,9 @@ class AppCoordinator {
             },
             onCropOCR: {
                 self.cropOCRCoordinator.show()
+            },
+            onRecentXcodeProjects: {
+                self.xcodeRecentCoordinator.open()
             }
         )
     }

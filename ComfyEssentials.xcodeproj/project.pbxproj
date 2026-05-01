@@ -10,6 +10,7 @@
 		9B7AB2332FA4489900447A5B /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB2322FA4489900447A5B /* KeyboardShortcuts */; };
 		9B7AB3702FA455EE00447A5B /* ComfyWindowKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB36F2FA455EE00447A5B /* ComfyWindowKit */; };
 		9B7AB3A62FA4631F00447A5B /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB3A52FA4631F00447A5B /* SnapCore */; };
+		9B7AB4E92FA56C5400447A5B /* ComfyEssentialsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB4E82FA56C5400447A5B /* ComfyEssentialsUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7AB4E92FA56C5400447A5B /* ComfyEssentialsUI in Frameworks */,
 				9B7AB3702FA455EE00447A5B /* ComfyWindowKit in Frameworks */,
 				9B7AB3A62FA4631F00447A5B /* SnapCore in Frameworks */,
 				9B7AB2332FA4489900447A5B /* KeyboardShortcuts in Frameworks */,
@@ -101,6 +103,7 @@
 				9B7AB2322FA4489900447A5B /* KeyboardShortcuts */,
 				9B7AB36F2FA455EE00447A5B /* ComfyWindowKit */,
 				9B7AB3A52FA4631F00447A5B /* SnapCore */,
+				9B7AB4E82FA56C5400447A5B /* ComfyEssentialsUI */,
 			);
 			productName = ComfyEssentials;
 			productReference = 9B7AB2232FA4484600447A5B /* ComfyEssentials.app */;
@@ -134,6 +137,7 @@
 				9B7AB2312FA4489900447A5B /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				9B7AB36E2FA455EE00447A5B /* XCLocalSwiftPackageReference "ComfyWindowKit" */,
 				9B7AB3A42FA4631F00447A5B /* XCRemoteSwiftPackageReference "SnapCore" */,
+				9B7AB4E72FA56C5400447A5B /* XCLocalSwiftPackageReference "ComfyEssentialsUI" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B7AB2242FA4484600447A5B /* Products */;
@@ -376,6 +380,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ComfyWindowKit;
 		};
+		9B7AB4E72FA56C5400447A5B /* XCLocalSwiftPackageReference "ComfyEssentialsUI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ComfyEssentialsUI;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -411,6 +419,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9B7AB3A42FA4631F00447A5B /* XCRemoteSwiftPackageReference "SnapCore" */;
 			productName = SnapCore;
+		};
+		9B7AB4E82FA56C5400447A5B /* ComfyEssentialsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComfyEssentialsUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

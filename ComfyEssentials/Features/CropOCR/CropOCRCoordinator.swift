@@ -8,6 +8,7 @@
 import AppKit
 import SwiftUI
 import SnapCore
+import ComfyEssentialsUI
 
 @MainActor
 class CropOCRCoordinator {
