@@ -15,7 +15,6 @@ Text Normalization handles it automatically the moment you paste.
 - Clean text is copied to your clipboard
 - Close the window and focus your next app
 
-
 ## Selection OCR
 - Vertical text
 - rotated labels
@@ -27,6 +26,10 @@ anything you can see but can't select (or u can just hard to copy).
 - get the extracted text back immediately
 
 From there you can clean it up however you need.
+
+## Recent Xcode Projects
+- Simple Hotkey to open up Most Recent Xcode Projects
+- (Same as right clicking Xcode just on a hotkey)
 
 # Dependencies
 
