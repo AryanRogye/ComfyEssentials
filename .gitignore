@@ -1,6 +1,5 @@
 *.DS_Store
 
-/Packages
 xcuserdata/
 
 *.swiftpm/
