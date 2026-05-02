@@ -1,5 +1,8 @@
 *.DS_Store
 
+# SwiftPM
+.build/
+
 xcuserdata/
 
 *.swiftpm/
