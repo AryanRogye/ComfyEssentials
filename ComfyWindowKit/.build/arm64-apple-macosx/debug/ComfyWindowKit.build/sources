@@ -1,0 +1,12 @@
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/ComfyWindowKit.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/NSRect+axPosition.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfySCWindow.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfyWindow.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/WindowElement.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXHelpers.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXSubscription.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSPrivate.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSTypes.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/GlobalClickMonitor.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/ScreenshotHelper.swift
+/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/WindowServerBridge.swift

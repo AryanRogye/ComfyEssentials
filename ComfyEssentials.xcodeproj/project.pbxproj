@@ -17,33 +17,9 @@
 		9B7AB2232FA4484600447A5B /* ComfyEssentials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComfyEssentials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9B7AB3062FA44DD300447A5B /* Exceptions for "ComfyEssentials" folder in "ComfyEssentials" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Extensions/String+normalizeText.swift",
-			);
-			target = 9B7AB2222FA4484600447A5B /* ComfyEssentials */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		9B7AB3072FA44DD300447A5B /* Exceptions for "ComfyEssentials" folder in "Copy Bundle Resources" phase from "ComfyEssentials" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 9B7AB2212FA4484600447A5B /* Resources */;
-			membershipExceptions = (
-				"Extensions/String+normalizeText.swift",
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9B7AB2F92FA44DD300447A5B /* ComfyEssentials */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				9B7AB3062FA44DD300447A5B /* Exceptions for "ComfyEssentials" folder in "ComfyEssentials" target */,
-				9B7AB3072FA44DD300447A5B /* Exceptions for "ComfyEssentials" folder in "Copy Bundle Resources" phase from "ComfyEssentials" target */,
-			);
 			path = ComfyEssentials;
 			sourceTree = "<group>";
 		};

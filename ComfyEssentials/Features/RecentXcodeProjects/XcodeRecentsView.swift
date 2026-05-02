@@ -10,20 +10,17 @@ import ComfyEssentialsUI
 
 struct XcodeRecentsView: View {
     
-    let parser: XcodeRecentParser
-    @State private var projects: [XcodeFile] = []
-    @State private var isLoading = false
-    @State private var selected: XcodeFile.ID? = nil
-    @State private var filterProjects: String = ""
+    @Bindable var vm: XcodeRecentViewModel
+    var onClose: () -> Void
+    
     @FocusState private var focusedList
     @FocusState private var focusedFilter
-    
-    @State private var keyMonitor: Any?
+
 
     var body: some View {
         VStack(spacing: 0) {
             
-            TextField("Filter [f]", text: $filterProjects)
+            TextField("Filter [f]", text: $vm.filterProjects)
                 .focused($focusedFilter)
                 .textFieldStyle(.plain)
                 .font(.system(size: 18, weight: .semibold))
@@ -40,19 +37,26 @@ struct XcodeRecentsView: View {
                 .padding(.horizontal, 12)
                 .padding(.vertical, 4)
             
-            List(projects, selection: $selected) { file in
-                
-                XcodeRecentRow(
-                    title: file.rawValue,
-                    label: file.displayPath,
-                    displayChar: file.displayChar,
-                    color: file.color
-                )
-                .tag(file.id)
+            ScrollViewReader { proxy in
+                List(vm.projects, selection: $vm.selected) { file in
+                    
+                    XcodeRecentRow(
+                        title: file.rawValue,
+                        label: file.displayPath,
+                        displayChar: file.displayChar,
+                        color: file.color
+                    )
+                    .tag(file.id)
+                }
+                .focused($focusedList)
+                .onChange(of: vm.selected) { oldValue, newValue in
+                    if let newValue {
+                        proxy.scrollTo(newValue, anchor: .center)
+                    }
+                }
             }
-            .focused($focusedList)
             
-            if let id = selected, let file = projects.first(where: { $0.id == id }) {
+            if let id = vm.selected, let file = vm.projects.first(where: { $0.id == id }) {
                 Divider()
                 HStack {
                     Spacer()
@@ -65,39 +69,18 @@ struct XcodeRecentsView: View {
             }
         }
         .frame(width: 300, height: 400)
-        .task {
-            loadProjects()
-        }
         .onAppear {
-            keyMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { event in
-                if event.charactersIgnoringModifiers == "f" {
-                    focusedFilter = true
-                    return nil
-                }
-                return event
-            }
+            vm.onClose = onClose
+            vm.setFilterFocus = { focusedFilter = $0 }
+            vm.setListFocus   = { focusedList = $0 }
+            vm.isFilterFocused = { focusedFilter }
+            vm.attachMonitors()
         }
         .onDisappear {
-            if let monitor = keyMonitor {
-                NSEvent.removeMonitor(monitor)
-                keyMonitor = nil
-            }
+            vm.removeMonitors()
         }
-    }
-    
-    
-    public func loadProjects() {
-        if isLoading { return }
-        isLoading = true
-        Task {
-            if let projects = await parser.getXcodeItems() {
-                self.projects = projects
-                if let first = projects.first {
-                    self.selected = first.id
-                    focusedList = true
-                }
-            }
-            self.isLoading = false
+        .task {
+            vm.loadProjects()
         }
     }
 }

@@ -1,0 +1,400 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ComfyWindowKit-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/sources",
+      "importPath" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/ComfyWindowKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/NSRect+axPosition.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfySCWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfyWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/WindowElement.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXHelpers.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXSubscription.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSPrivate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSTypes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/GlobalClickMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/ScreenshotHelper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/WindowServerBridge.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ComfyWindowKit",
+      "moduleOutputPath" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/Modules/ComfyWindowKit.swiftmodule",
+      "objects" : [
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ComfyWindowKit.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/NSRect+axPosition.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ComfySCWindow.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ComfyWindow.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/WindowElement.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/AXHelpers.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/AXSubscription.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/CGSPrivate.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/CGSTypes.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/GlobalClickMonitor.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ScreenshotHelper.swift.o",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/WindowServerBridge.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j11",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/include/ComfyWindowKit-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "comfywindowkit"
+      ],
+      "outputFileMapPath" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ComfyWindowKit.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/NSRect+axPosition.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ComfySCWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ComfyWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/WindowElement.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/AXHelpers.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/AXSubscription.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/CGSPrivate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/CGSTypes.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/GlobalClickMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/ScreenshotHelper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/WindowServerBridge.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/Modules/ComfyWindowKit.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/ComfyWindowKit.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/NSRect+axPosition.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfySCWindow.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfyWindow.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/WindowElement.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXHelpers.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXSubscription.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSPrivate.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSTypes.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/GlobalClickMonitor.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/ScreenshotHelper.swift",
+        "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/WindowServerBridge.swift"
+      ],
+      "tempsPath" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ComfyWindowKit" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ComfyWindowKit",
+      "-package-name",
+      "comfywindowkit",
+      "-c",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/ComfyWindowKit.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/NSRect+axPosition.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfySCWindow.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfyWindow.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/WindowElement.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXHelpers.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXSubscription.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSPrivate.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSTypes.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/GlobalClickMonitor.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/ScreenshotHelper.swift",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/WindowServerBridge.swift",
+      "-I",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j11",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/include/ComfyWindowKit-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "comfywindowkit",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ComfyWindowKit" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/ComfyWindowKit.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/NSRect+axPosition.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfySCWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/ComfyWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Models/WindowElement.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXHelpers.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/AX/AXSubscription.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSPrivate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/CGS/CGSTypes.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/GlobalClickMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/Utils/ScreenshotHelper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/Sources/ComfyWindowKit/Windows/WindowServerBridge.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/ComfyWindowKit.build/sources"
+    },
+    "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/aryanrogye/Code/Projects/ComfyEssentials/ComfyWindowKit/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

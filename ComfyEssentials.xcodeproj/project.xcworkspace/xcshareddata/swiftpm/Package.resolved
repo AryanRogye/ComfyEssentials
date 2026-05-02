@@ -1,0 +1,33 @@
+{
+  "originHash" : "2bf9850317975e5f60de3dbfb7c2690374dca86b76e9fbf72d1ba7f80f42e60e",
+  "pins" : [
+    {
+      "identity" : "keyboardshortcuts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/KeyboardShortcuts",
+      "state" : {
+        "revision" : "1aef85578fdd4f9eaeeb8d53b7b4fc31bf08fe27",
+        "version" : "2.4.0"
+      }
+    },
+    {
+      "identity" : "snapcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AryanRogye/SnapCore",
+      "state" : {
+        "branch" : "main",
+        "revision" : "778ed39b1bb12dceafe5a158fe7e8117c4a2aa1e"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "6675bc0ff86e61436e615df6fc5174e043e57924",
+        "version" : "1.4.1"
+      }
+    }
+  ],
+  "version" : 3
+}
