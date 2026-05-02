@@ -20,6 +20,8 @@ class AppCoordinator {
     var cropOCRCoordinator : CropOCRCoordinator
     var xcodeRecentCoordinator: XcodeRecentCoordinator
     
+    var appSettingsCoordinator : AppSettingsCoordinator
+    
     /// Windowing
     let windowCore = WindowCore()
     
@@ -34,6 +36,13 @@ class AppCoordinator {
         self.xcodeRecentCoordinator = XcodeRecentCoordinator(
             windowCoordinator: windowCoordinator
         )
+        self.appSettingsCoordinator = AppSettingsCoordinator(
+            windowCoordinator: windowCoordinator
+        )
+    }
+    
+    public func showMainWindow() {
+        self.appSettingsCoordinator.show()
     }
     
     public func start() {
@@ -48,5 +57,6 @@ class AppCoordinator {
                 self.xcodeRecentCoordinator.open()
             }
         )
+        showMainWindow()
     }
 }

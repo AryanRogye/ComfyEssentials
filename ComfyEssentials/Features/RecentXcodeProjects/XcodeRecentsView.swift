@@ -38,8 +38,7 @@ struct XcodeRecentsView: View {
                 .padding(.vertical, 4)
             
             ScrollViewReader { proxy in
-                List(vm.projects, selection: $vm.selected) { file in
-                    
+                List(vm.visibleProjects, selection: $vm.selected) { file in
                     XcodeRecentRow(
                         title: file.rawValue,
                         label: file.displayPath,

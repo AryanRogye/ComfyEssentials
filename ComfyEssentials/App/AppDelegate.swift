@@ -21,6 +21,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         appCoordinator.start()
     }
     
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows: Bool) -> Bool {
+        appCoordinator.showMainWindow()
+        return true
+    }
+    
     public func applicationWillTerminate(_ notification: Notification) {
     }
     
