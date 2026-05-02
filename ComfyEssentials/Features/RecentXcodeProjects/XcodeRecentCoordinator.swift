@@ -26,6 +26,8 @@ final class XcodeRecentCoordinator {
         
         if isOpen { return }
         
+        vm.loadProjects()
+        
         print("Showing")
         windowCoordinator.showWindow(
             id: windowID,

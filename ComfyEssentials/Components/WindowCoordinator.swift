@@ -59,6 +59,7 @@ class WindowCoordinator {
         content: some View,
         size: NSSize = .init(width: 600, height: 400),
         origin: CGPoint? = nil,
+        makeGlass: Bool = false,
         onOpen: (() -> Void)? = nil,
         onClose: (() -> Void)? = nil,
         onBlur: (() -> Void)? = nil
@@ -90,7 +91,11 @@ class WindowCoordinator {
         
         let hostingView = NSHostingView(rootView: content)
         hostingView.wantsLayer = true
-        hostingView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+        if makeGlass {
+            hostingView.layer?.backgroundColor = NSColor.clear.cgColor
+        } else {
+            hostingView.layer?.backgroundColor = NSColor.windowBackgroundColor.cgColor
+        }
         window.contentView = hostingView
         
         /// Assign A Window Delegate
@@ -113,6 +118,39 @@ class WindowCoordinator {
         NSApp.activate(ignoringOtherApps: true)
         
         windows[id] = window
+        
+        if makeGlass {
+            makeWindowGlass(window)
+        }
+    }
+    
+    func makeWindowGlass(_ window: NSWindow) {
+        window.isOpaque = false
+        window.backgroundColor = .clear
+        window.hasShadow = true
+        
+        // Get the existing hosting view
+        guard let hostingView = window.contentView else { return }
+        
+        // Make a container view to hold both
+        let containerView = NSView(frame: hostingView.frame)
+        containerView.autoresizingMask = [.width, .height]
+        
+        // Glass goes in the container as the base
+        let glassView = NSGlassEffectView()
+        glassView.style = .regular
+        glassView.frame = containerView.bounds
+        glassView.autoresizingMask = [.width, .height]
+        containerView.addSubview(glassView)
+        
+        // Hosting view goes on top inside the container
+        hostingView.removeFromSuperview()
+        hostingView.frame = containerView.bounds
+        hostingView.autoresizingMask = [.width, .height]
+        containerView.addSubview(hostingView)
+        
+        // Container becomes the window's content view
+        window.contentView = containerView
     }
     
     func closeWindow(id: String) {

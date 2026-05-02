@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ComfyEssentialsSettings: View {
+    
+    @Bindable var appSettings: AppSettings
+    
     var body: some View {
         VStack {
-            Text("Hello")
+            Toggle("Show Menubar", isOn: $appSettings.showMenubar)
+                .toggleStyle(.switch)
         }
-        .padding()
         .frame(width: 500, height: 500)
     }
 }

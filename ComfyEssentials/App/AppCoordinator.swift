@@ -10,10 +10,12 @@ import Foundation
 @MainActor
 class AppCoordinator {
     
+    var appSettings: AppSettings
     /// Initialize on start
     var hotkeyCoordinator : HotkeyCoordinator?
     
     let windowCoordinator = WindowCoordinator()
+    let panelCoordinator  = PanelCoordinator()
     
     /// Coordinators
     var whitespaceNormalizationCoordinator: WhitespaceNormalizationCoordinator
@@ -25,7 +27,10 @@ class AppCoordinator {
     /// Windowing
     let windowCore = WindowCore()
     
-    init() {
+    init(appSettings: AppSettings) {
+        
+        self.appSettings = appSettings
+        
         self.whitespaceNormalizationCoordinator = WhitespaceNormalizationCoordinator(
             windowCoordinator: windowCoordinator,
             windowCore: windowCore
@@ -37,7 +42,8 @@ class AppCoordinator {
             windowCoordinator: windowCoordinator
         )
         self.appSettingsCoordinator = AppSettingsCoordinator(
-            windowCoordinator: windowCoordinator
+            windowCoordinator: windowCoordinator,
+            appSettings: appSettings
         )
     }
     

@@ -11,6 +11,7 @@
 		9B7AB3702FA455EE00447A5B /* ComfyWindowKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB36F2FA455EE00447A5B /* ComfyWindowKit */; };
 		9B7AB3A62FA4631F00447A5B /* SnapCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB3A52FA4631F00447A5B /* SnapCore */; };
 		9B7AB4E92FA56C5400447A5B /* ComfyEssentialsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB4E82FA56C5400447A5B /* ComfyEssentialsUI */; };
+		9B7AB7B12FA5CF1F00447A5B /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = 9B7AB7B02FA5CF1F00447A5B /* Defaults */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 				9B7AB3702FA455EE00447A5B /* ComfyWindowKit in Frameworks */,
 				9B7AB3A62FA4631F00447A5B /* SnapCore in Frameworks */,
 				9B7AB2332FA4489900447A5B /* KeyboardShortcuts in Frameworks */,
+				9B7AB7B12FA5CF1F00447A5B /* Defaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,7 @@
 				9B7AB36F2FA455EE00447A5B /* ComfyWindowKit */,
 				9B7AB3A52FA4631F00447A5B /* SnapCore */,
 				9B7AB4E82FA56C5400447A5B /* ComfyEssentialsUI */,
+				9B7AB7B02FA5CF1F00447A5B /* Defaults */,
 			);
 			productName = ComfyEssentials;
 			productReference = 9B7AB2232FA4484600447A5B /* ComfyEssentials.app */;
@@ -114,6 +117,7 @@
 				9B7AB36E2FA455EE00447A5B /* XCLocalSwiftPackageReference "ComfyWindowKit" */,
 				9B7AB3A42FA4631F00447A5B /* XCRemoteSwiftPackageReference "SnapCore" */,
 				9B7AB4E72FA56C5400447A5B /* XCLocalSwiftPackageReference "ComfyEssentialsUI" */,
+				9B7AB7AF2FA5CF1F00447A5B /* XCRemoteSwiftPackageReference "Defaults" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9B7AB2242FA4484600447A5B /* Products */;
@@ -379,6 +383,14 @@
 				kind = branch;
 			};
 		};
+		9B7AB7AF2FA5CF1F00447A5B /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -399,6 +411,11 @@
 		9B7AB4E82FA56C5400447A5B /* ComfyEssentialsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ComfyEssentialsUI;
+		};
+		9B7AB7B02FA5CF1F00447A5B /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B7AB7AF2FA5CF1F00447A5B /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

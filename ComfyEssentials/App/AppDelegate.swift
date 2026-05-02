@@ -9,11 +9,13 @@ import AppKit
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    let appCoordinator = AppCoordinator()
+    var appSettings = AppSettings()
+    let appCoordinator : AppCoordinator
     
     @MainActor
     override init() {
         NSApp.setActivationPolicy(.accessory)
+        self.appCoordinator = AppCoordinator(appSettings: appSettings)
         super.init()
     }
     

@@ -10,9 +10,11 @@ import AppKit
 @MainActor
 final class AppSettingsCoordinator {
     let windowCoordinator : WindowCoordinator
+    var appSettings       : AppSettings
     
-    init(windowCoordinator: WindowCoordinator) {
+    init(windowCoordinator: WindowCoordinator, appSettings: AppSettings) {
         self.windowCoordinator = windowCoordinator
+        self.appSettings       = appSettings
     }
     
     let windowID = UUID().uuidString
@@ -21,7 +23,8 @@ final class AppSettingsCoordinator {
         windowCoordinator.showWindow(
             id: windowID,
             title: "ComfyEssentials Settings",
-            content: ComfyEssentialsSettings()
+            content: ComfyEssentialsSettings(appSettings: appSettings),
+            makeGlass: true
         )
     }
 }
